@@ -50,6 +50,7 @@
 
 ## Table of Contents
 
+- [Security Update: Package Upgrade](#security-update-package-upgrade)
 - [Features](#features)
 - [Motivation](#motivation)
 - [Usage Examples](#usage-examples)
@@ -84,6 +85,31 @@
 - [Prior Art](#prior-art)
 - [Git History Rewrite](#git-history-rewrite)
 - [License](#license)
+
+
+## Security Update: Package Upgrade
+
+In this release, we have upgraded several npm packages to address known vulnerabilities. Ensuring the security of our project is a top priority, and we recommend keeping your dependencies up-to-date.
+
+### Vulnerability Details:
+
+- The previous versions of these packages had vulnerabilities that could potentially affect the security and stability of the project.
+- We have updated the npm packages to resolve these issues. Additionally, we have removed React Native-related code that was causing issues.
+
+### Steps Taken:
+
+- We have reviewed and tested the new versions of these packages to ensure compatibility with our codebase and to avoid introducing any breaking changes.
+
+### Recommended Action:
+
+- If you are using a fork of this repository or have cloned it before this update, please make sure to update your dependencies by running:
+
+    ```bash
+    npm install
+    ```
+
+We recommend regular updates and monitoring of dependencies using tools like npm audit to stay ahead of potential security issues.
+
 
 ## Features
 
