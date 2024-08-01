@@ -4,6 +4,7 @@
   "description": "Create and modify PDF files with JavaScript",
   "author": "Andrew Dillon <andrew.dillon.j@gmail.com>",
   "contributors": [
+    "Piyush (https://github.com/highinksy)",
     "jerp (https://github.com/jerp)",
     "Greg Bacchus (https://github.com/gregbacchus)",
     "Mickael Lecoq (https://github.com/mlecoq)",
@@ -120,7 +121,7 @@
   "license": "MIT",
   "private": false,
   "homepage": "https://pdf-lib.js.org",
-  "repository": "git+https://github.com/Hopding/pdf-lib.git",
+  "repository": "git+https://github.com/pilot-tech/pdf-lib",
   "bugs": {
     "url": "https://github.com/Hopding/pdf-lib/issues"
   },
