@@ -1,8 +1,8 @@
 {
   "name": "@pilot-tech/pdf-lib",
-  "version": "1.17.2",
+  "version": "1.17.1-mod.2024.1.alpha.0",
   "description": "Create and modify PDF files with JavaScript",
-  "author": "Andrew Dillon <andrew.dillon.j@gmail.com>",
+  "author": "Pilot Tech (modified version author), Andrew Dillon <andrew.dillon.j@gmail.com> (Original version author)",
   "contributors": [
     "Piyush (https://github.com/highinksy)",
     "jerp (https://github.com/jerp)",
@@ -48,23 +48,20 @@
     "lint:tslint:tests": "tslint --project tests/tsconfig.json --fix",
     "lint:prettier": "prettier --write \"./{src,tests,apps}/**/*.{ts,js,json,html,css}\" --loglevel error",
     "build": "yarn build:cjs && yarn build:es && yarn build:esm && yarn build:esm:min && yarn build:umd && yarn build:umd:min && yarn build:downlevel-dts",
-    "build:cjs": "ttsc --module commonjs --outDir cjs",
-    "build:es": "ttsc --module ES2015 --outDir es",
+    "build:cjs": "tsc --module commonjs --outDir cjs",
+    "build:es": "tsc --module ES2015 --outDir es",
     "build:esm": "rollup --config rollup.config.js --file dist/pdf-lib.esm.js --environment MODULE_TYPE:es",
     "build:esm:min": "rollup --config rollup.config.js --file dist/pdf-lib.esm.min.js --environment MINIFY,MODULE_TYPE:es",
     "build:umd": "rollup --config rollup.config.js --file dist/pdf-lib.js --environment MODULE_TYPE:umd",
     "build:umd:min": "rollup --config rollup.config.js --file dist/pdf-lib.min.js --environment MINIFY,MODULE_TYPE:umd",
     "build:downlevel-dts": "rimraf ts3.4 && yarn downlevel-dts . ts3.4 && rimraf ts3.4/scratchpad",
-    "scratchpad:start": "ttsc --build scratchpad/tsconfig.json --watch",
+    "scratchpad:start": "tsc --build scratchpad/tsconfig.json --watch",
     "scratchpad:run": "node scratchpad/build/scratchpad/index.js",
     "scratchpad:flame": "rimraf isolate*.log && node --prof scratchpad/build/scratchpad/index.js && node --prof-process --preprocess -j isolate*.log | flamebearer",
-    "apps:node": "ttsc --build apps/node/tsconfig.json && node apps/node-build/index.js",
+    "apps:node": "tsc --build apps/node/tsconfig.json && node apps/node-build/index.js",
     "apps:deno": "deno run --allow-read --allow-write --allow-run apps/deno/index.ts",
     "apps:web": "http-server -c-1 .",
-    "apps:web:mac": "bash -c 'sleep 1 && open http://localhost:8080/apps/web/test1.html' & yarn apps:web",
-    "apps:rn:ios": "cd apps/rn && yarn add ./../.. --force && react-native run-ios",
-    "apps:rn:android": "yarn apps:rn:emulator & cd apps/rn && yarn add ./../.. --force && react-native run-android",
-    "apps:rn:emulator": "emulator -avd \"$(emulator -list-avds | head -n 1)\" & bash -c 'sleep 5 && adb reverse tcp:8080 tcp:8080 && adb reverse tcp:8081 tcp:8081'"
+    "apps:web:mac": "bash -c 'sleep 1 && open http://localhost:8080/apps/web/test1.html' & yarn apps:web"
   },
   "main": "cjs/index.js",
   "module": "es/index.js",
@@ -123,7 +120,7 @@
   "homepage": "https://pdf-lib.js.org",
   "repository": "git+https://github.com/pilot-tech/pdf-lib",
   "bugs": {
-    "url": "https://github.com/Hopding/pdf-lib/issues"
+    "url": "https://github.com/pilot-tech/pdf-lib/issues"
   },
   "keywords": [
     "pdf-lib",
