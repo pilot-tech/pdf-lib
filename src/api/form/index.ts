@@ -1,4 +1,4 @@
-export * from 'src/api/form/appearances';
+export * from '../../api/form/appearances';
 export { default as PDFButton } from '../../api/form/PDFButton';
 export { default as PDFCheckBox } from '../../api/form/PDFCheckBox';
 export { default as PDFDropdown } from '../../api/form/PDFDropdown';

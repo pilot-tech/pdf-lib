@@ -8,7 +8,7 @@ import PDFAcroNonTerminal from '../../core/acroform/PDFAcroNonTerminal';
 import {
   createPDFAcroField,
   createPDFAcroFields,
-} from 'src/core/acroform/utils';
+} from '../../core/acroform/utils';
 
 class PDFAcroForm {
   readonly dict: PDFDict;

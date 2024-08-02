@@ -1,10 +1,10 @@
-import Embeddable from 'src/api/Embeddable';
+import Embeddable from '../api/Embeddable';
 import {
   EncryptedPDFError,
   FontkitNotRegisteredError,
   ForeignPageError,
   RemovePageFromEmptyDocumentError,
-} from 'src/api/errors';
+} from '../api/errors';
 import PDFEmbeddedPage from '../api/PDFEmbeddedPage';
 import PDFFont from '../api/PDFFont';
 import PDFImage from '../api/PDFImage';

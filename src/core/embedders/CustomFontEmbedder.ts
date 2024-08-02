@@ -11,7 +11,7 @@ import {
   Cache,
   sortedUniq,
   toHexStringOfMinLength,
-} from 'src/utils';
+} from '../../utils';
 
 /**
  * A note of thanks to the developers of https://github.com/foliojs/pdfkit, as

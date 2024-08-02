@@ -1,4 +1,4 @@
-export * from 'src/core/errors';
+export * from '../core/errors';
 export { default as CharCodes } from '../core/syntax/CharCodes';
 
 export { default as PDFContext } from '../core/PDFContext';
@@ -65,5 +65,5 @@ export { default as PDFXRefStreamParser } from '../core/parser/PDFXRefStreamPars
 
 export { decodePDFRawStream } from '../core/streams/decode';
 
-export * from 'src/core/annotation';
-export * from 'src/core/acroform';
+export * from '../core/annotation';
+export * from '../core/acroform';

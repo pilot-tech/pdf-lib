@@ -6,7 +6,7 @@ import {
   PDFNumber,
   PDFOperator,
   PDFOperatorNames as Ops,
-} from 'src/core';
+} from '../core';
 
 /* ==================== Clipping Path Operators ==================== */
 

@@ -40,8 +40,8 @@ import {
   createPDFAcroFields,
   PDFName,
   PDFWidgetAnnotation,
-} from 'src/core';
-import { assertIs, Cache, assertOrUndefined } from 'src/utils';
+} from '../../core';
+import { assertIs, Cache, assertOrUndefined } from '../../utils';
 
 export interface FlattenOptions {
   updateFieldAppearances: boolean;

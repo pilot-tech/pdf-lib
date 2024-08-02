@@ -7,7 +7,7 @@ import { AcroChoiceFlags } from '../../core/acroform/flags';
 import {
   InvalidAcroFieldValueError,
   MultiSelectValueError,
-} from 'src/core/errors';
+} from '../../core/errors';
 
 class PDFAcroChoice extends PDFAcroTerminal {
   setValues(values: (PDFString | PDFHexString)[]) {
