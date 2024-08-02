@@ -1,25 +1,25 @@
-import PDFDocument from 'src/api/PDFDocument';
-import PDFPage from 'src/api/PDFPage';
-import PDFFont from 'src/api/PDFFont';
-import PDFImage from 'src/api/PDFImage';
+import PDFDocument from '../../api/PDFDocument';
+import PDFPage from '../../api/PDFPage';
+import PDFFont from '../../api/PDFFont';
+import PDFImage from '../../api/PDFImage';
 import PDFField, {
   FieldAppearanceOptions,
   assertFieldAppearanceOptions,
-} from 'src/api/form/PDFField';
+} from '../../api/form/PDFField';
 import {
   AppearanceProviderFor,
   normalizeAppearance,
   defaultTextFieldAppearanceProvider,
-} from 'src/api/form/appearances';
-import { rgb } from 'src/api/colors';
-import { degrees } from 'src/api/rotations';
+} from '../../api/form/appearances';
+import { rgb } from '../../api/colors';
+import { degrees } from '../../api/rotations';
 import {
   RichTextFieldReadError,
   ExceededMaxLengthError,
   InvalidMaxLengthError,
-} from 'src/api/errors';
-import { ImageAlignment } from 'src/api/image/alignment';
-import { TextAlignment } from 'src/api/text/alignment';
+} from '../../api/errors';
+import { ImageAlignment } from '../../api/image/alignment';
+import { TextAlignment } from '../../api/text/alignment';
 
 import {
   PDFHexString,
@@ -28,14 +28,14 @@ import {
   PDFAcroText,
   AcroTextFlags,
   PDFWidgetAnnotation,
-} from 'src/core';
+} from '../../core';
 import {
   assertIs,
   assertIsOneOf,
   assertOrUndefined,
   assertPositive,
   assertRangeOrUndefined,
-} from 'src/utils';
+} from '../../utils';
 
 /**
  * Represents a text field of a [[PDFForm]].

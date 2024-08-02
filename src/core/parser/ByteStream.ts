@@ -1,7 +1,7 @@
-import { NextByteAssertionError } from 'src/core/errors';
-import PDFRawStream from 'src/core/objects/PDFRawStream';
-import { decodePDFRawStream } from 'src/core/streams/decode';
-import CharCodes from 'src/core/syntax/CharCodes';
+import { NextByteAssertionError } from '../../core/errors';
+import PDFRawStream from '../../core/objects/PDFRawStream';
+import { decodePDFRawStream } from '../../core/streams/decode';
+import CharCodes from '../../core/syntax/CharCodes';
 
 // TODO: See how line/col tracking affects performance
 class ByteStream {

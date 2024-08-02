@@ -5,10 +5,10 @@ import {
   EncodingType,
 } from '@pdf-lib/standard-fonts';
 
-import PDFHexString from 'src/core/objects/PDFHexString';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFContext from 'src/core/PDFContext';
-import { toCodePoint, toHexString } from 'src/utils';
+import PDFHexString from '../../core/objects/PDFHexString';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFContext from '../../core/PDFContext';
+import { toCodePoint, toHexString } from '../../utils';
 
 export interface Glyph {
   code: number;

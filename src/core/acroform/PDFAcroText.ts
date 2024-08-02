@@ -1,11 +1,11 @@
-import PDFContext from 'src/core/PDFContext';
-import PDFDict from 'src/core/objects/PDFDict';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFString from 'src/core/objects/PDFString';
-import PDFHexString from 'src/core/objects/PDFHexString';
-import PDFName from 'src/core/objects/PDFName';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFAcroTerminal from 'src/core/acroform/PDFAcroTerminal';
+import PDFContext from '../../core/PDFContext';
+import PDFDict from '../../core/objects/PDFDict';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFString from '../../core/objects/PDFString';
+import PDFHexString from '../../core/objects/PDFHexString';
+import PDFName from '../../core/objects/PDFName';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFAcroTerminal from '../../core/acroform/PDFAcroTerminal';
 
 class PDFAcroText extends PDFAcroTerminal {
   static fromDict = (dict: PDFDict, ref: PDFRef) => new PDFAcroText(dict, ref);

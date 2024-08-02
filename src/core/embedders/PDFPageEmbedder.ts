@@ -1,19 +1,19 @@
 import {
   MissingPageContentsEmbeddingError,
   UnrecognizedStreamTypeError,
-} from 'src/core/errors';
-import PDFArray from 'src/core/objects/PDFArray';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFRawStream from 'src/core/objects/PDFRawStream';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFStream from 'src/core/objects/PDFStream';
-import PDFContext from 'src/core/PDFContext';
-import { decodePDFRawStream } from 'src/core/streams/decode';
-import PDFContentStream from 'src/core/structures/PDFContentStream';
-import PDFPageLeaf from 'src/core/structures/PDFPageLeaf';
-import CharCodes from 'src/core/syntax/CharCodes';
-import { TransformationMatrix } from 'src/types/matrix';
-import { mergeIntoTypedArray } from 'src/utils';
+} from '../../core/errors';
+import PDFArray from '../../core/objects/PDFArray';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFRawStream from '../../core/objects/PDFRawStream';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFStream from '../../core/objects/PDFStream';
+import PDFContext from '../../core/PDFContext';
+import { decodePDFRawStream } from '../../core/streams/decode';
+import PDFContentStream from '../../core/structures/PDFContentStream';
+import PDFPageLeaf from '../../core/structures/PDFPageLeaf';
+import CharCodes from '../../core/syntax/CharCodes';
+import { TransformationMatrix } from '../../types/matrix';
+import { mergeIntoTypedArray } from '../../utils';
 
 /**
  * Represents a page bounding box.

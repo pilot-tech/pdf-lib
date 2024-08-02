@@ -1,15 +1,15 @@
-import PDFArray from 'src/core/objects/PDFArray';
-import PDFBool from 'src/core/objects/PDFBool';
-import PDFHexString from 'src/core/objects/PDFHexString';
-import PDFName from 'src/core/objects/PDFName';
-import PDFNull from 'src/core/objects/PDFNull';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFObject from 'src/core/objects/PDFObject';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFStream from 'src/core/objects/PDFStream';
-import PDFString from 'src/core/objects/PDFString';
-import PDFContext from 'src/core/PDFContext';
-import CharCodes from 'src/core/syntax/CharCodes';
+import PDFArray from '../../core/objects/PDFArray';
+import PDFBool from '../../core/objects/PDFBool';
+import PDFHexString from '../../core/objects/PDFHexString';
+import PDFName from '../../core/objects/PDFName';
+import PDFNull from '../../core/objects/PDFNull';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFObject from '../../core/objects/PDFObject';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFStream from '../../core/objects/PDFStream';
+import PDFString from '../../core/objects/PDFString';
+import PDFContext from '../../core/PDFContext';
+import CharCodes from '../../core/syntax/CharCodes';
 
 export type DictMap = Map<PDFName, PDFObject>;
 

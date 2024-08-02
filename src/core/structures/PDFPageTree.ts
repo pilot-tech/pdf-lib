@@ -1,11 +1,11 @@
-import PDFArray from 'src/core/objects/PDFArray';
-import PDFDict, { DictMap } from 'src/core/objects/PDFDict';
-import PDFName from 'src/core/objects/PDFName';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFContext from 'src/core/PDFContext';
-import PDFPageLeaf from 'src/core/structures/PDFPageLeaf';
-import { InvalidTargetIndexError, CorruptPageTreeError } from 'src/core/errors';
+import PDFArray from '../../core/objects/PDFArray';
+import PDFDict, { DictMap } from '../../core/objects/PDFDict';
+import PDFName from '../../core/objects/PDFName';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFContext from '../../core/PDFContext';
+import PDFPageLeaf from '../../core/structures/PDFPageLeaf';
+import { InvalidTargetIndexError, CorruptPageTreeError } from '../../core/errors';
 
 export type TreeNode = PDFPageTree | PDFPageLeaf;
 

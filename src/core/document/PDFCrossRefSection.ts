@@ -1,6 +1,6 @@
-import PDFRef from 'src/core/objects/PDFRef';
-import CharCodes from 'src/core/syntax/CharCodes';
-import { copyStringIntoBuffer, padStart } from 'src/utils';
+import PDFRef from '../../core/objects/PDFRef';
+import CharCodes from '../../core/syntax/CharCodes';
+import { copyStringIntoBuffer, padStart } from '../../utils';
 
 export interface Entry {
   ref: PDFRef;

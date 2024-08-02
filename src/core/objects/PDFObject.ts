@@ -1,5 +1,5 @@
-import { MethodNotImplementedError } from 'src/core/errors';
-import PDFContext from 'src/core/PDFContext';
+import { MethodNotImplementedError } from '../../core/errors';
+import PDFContext from '../../core/PDFContext';
 
 class PDFObject {
   clone(_context?: PDFContext): PDFObject {

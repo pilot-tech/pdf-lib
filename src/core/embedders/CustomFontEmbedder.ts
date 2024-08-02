@@ -1,11 +1,11 @@
-import { Font, Fontkit, Glyph, TypeFeatures } from 'src/types/fontkit';
+import { Font, Fontkit, Glyph, TypeFeatures } from '../../types/fontkit';
 
-import { createCmap } from 'src/core/embedders/CMap';
-import { deriveFontFlags } from 'src/core/embedders/FontFlags';
-import PDFHexString from 'src/core/objects/PDFHexString';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFString from 'src/core/objects/PDFString';
-import PDFContext from 'src/core/PDFContext';
+import { createCmap } from '../../core/embedders/CMap';
+import { deriveFontFlags } from '../../core/embedders/FontFlags';
+import PDFHexString from '../../core/objects/PDFHexString';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFString from '../../core/objects/PDFString';
+import PDFContext from '../../core/PDFContext';
 import {
   byAscendingId,
   Cache,

@@ -1,5 +1,5 @@
-import { asNumber, asPDFName, asPDFNumber } from 'src/api/objects';
-import { degreesToRadians } from 'src/api/rotations';
+import { asNumber, asPDFName, asPDFNumber } from '../api/objects';
+import { degreesToRadians } from '../api/rotations';
 import {
   PDFHexString,
   PDFName,

@@ -1,13 +1,13 @@
-import PDFArray from 'src/core/objects/PDFArray';
-import PDFHexString from 'src/core/objects/PDFHexString';
-import PDFName from 'src/core/objects/PDFName';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFObject from 'src/core/objects/PDFObject';
-import PDFString from 'src/core/objects/PDFString';
-import PDFOperatorNames from 'src/core/operators/PDFOperatorNames';
-import PDFContext from 'src/core/PDFContext';
-import CharCodes from 'src/core/syntax/CharCodes';
-import { copyStringIntoBuffer } from 'src/utils';
+import PDFArray from '../../core/objects/PDFArray';
+import PDFHexString from '../../core/objects/PDFHexString';
+import PDFName from '../../core/objects/PDFName';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFObject from '../../core/objects/PDFObject';
+import PDFString from '../../core/objects/PDFString';
+import PDFOperatorNames from '../../core/operators/PDFOperatorNames';
+import PDFContext from '../../core/PDFContext';
+import CharCodes from '../../core/syntax/CharCodes';
+import { copyStringIntoBuffer } from '../../utils';
 
 export type PDFOperatorArg =
   | string

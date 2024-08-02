@@ -1,9 +1,9 @@
-import { NumberParsingError } from 'src/core/errors';
-import ByteStream from 'src/core/parser/ByteStream';
-import CharCodes from 'src/core/syntax/CharCodes';
-import { IsDigit, IsNumeric } from 'src/core/syntax/Numeric';
-import { IsWhitespace } from 'src/core/syntax/Whitespace';
-import { charFromCode } from 'src/utils';
+import { NumberParsingError } from '../../core/errors';
+import ByteStream from '../../core/parser/ByteStream';
+import CharCodes from '../../core/syntax/CharCodes';
+import { IsDigit, IsNumeric } from '../../core/syntax/Numeric';
+import { IsWhitespace } from '../../core/syntax/Whitespace';
+import { charFromCode } from '../../utils';
 
 const { Newline, CarriageReturn } = CharCodes;
 

@@ -5,13 +5,13 @@ import {
   ForeignPageError,
   RemovePageFromEmptyDocumentError,
 } from 'src/api/errors';
-import PDFEmbeddedPage from 'src/api/PDFEmbeddedPage';
-import PDFFont from 'src/api/PDFFont';
-import PDFImage from 'src/api/PDFImage';
-import PDFPage from 'src/api/PDFPage';
-import PDFForm from 'src/api/form/PDFForm';
-import { PageSizes } from 'src/api/sizes';
-import { StandardFonts } from 'src/api/StandardFonts';
+import PDFEmbeddedPage from '../api/PDFEmbeddedPage';
+import PDFFont from '../api/PDFFont';
+import PDFImage from '../api/PDFImage';
+import PDFPage from '../api/PDFPage';
+import PDFForm from '../api/form/PDFForm';
+import { PageSizes } from '../api/sizes';
+import { StandardFonts } from '../api/StandardFonts';
 import {
   CustomFontEmbedder,
   CustomFontSubsetEmbedder,
@@ -34,7 +34,7 @@ import {
   PngEmbedder,
   StandardFontEmbedder,
   UnexpectedObjectTypeError,
-} from 'src/core';
+} from '../core';
 import {
   ParseSpeeds,
   AttachmentOptions,
@@ -44,11 +44,11 @@ import {
   CreateOptions,
   EmbedFontOptions,
   SetTitleOptions,
-} from 'src/api/PDFDocumentOptions';
-import PDFObject from 'src/core/objects/PDFObject';
-import PDFRef from 'src/core/objects/PDFRef';
-import { Fontkit } from 'src/types/fontkit';
-import { TransformationMatrix } from 'src/types/matrix';
+} from '../api/PDFDocumentOptions';
+import PDFObject from '../core/objects/PDFObject';
+import PDFRef from '../core/objects/PDFRef';
+import { Fontkit } from '../types/fontkit';
+import { TransformationMatrix } from '../types/matrix';
 import {
   assertIs,
   assertIsOneOfOrUndefined,
@@ -61,11 +61,11 @@ import {
   pluckIndices,
   range,
   toUint8Array,
-} from 'src/utils';
-import FileEmbedder, { AFRelationship } from 'src/core/embedders/FileEmbedder';
-import PDFEmbeddedFile from 'src/api/PDFEmbeddedFile';
-import PDFJavaScript from 'src/api/PDFJavaScript';
-import JavaScriptEmbedder from 'src/core/embedders/JavaScriptEmbedder';
+} from '../utils';
+import FileEmbedder, { AFRelationship } from '../core/embedders/FileEmbedder';
+import PDFEmbeddedFile from '../api/PDFEmbeddedFile';
+import PDFJavaScript from '../api/PDFJavaScript';
+import JavaScriptEmbedder from '../core/embedders/JavaScriptEmbedder';
 
 /**
  * Represents a PDF document.

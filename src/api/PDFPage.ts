@@ -1,4 +1,4 @@
-import { Color, rgb } from 'src/api/colors';
+import { Color, rgb } from '../api/colors';
 import {
   drawImage,
   drawLine,
@@ -7,18 +7,18 @@ import {
   drawRectangle,
   drawSvgPath,
   drawEllipse,
-} from 'src/api/operations';
+} from '../api/operations';
 import {
   popGraphicsState,
   pushGraphicsState,
   translate,
   LineCapStyle,
   scale,
-} from 'src/api/operators';
-import PDFDocument from 'src/api/PDFDocument';
-import PDFEmbeddedPage from 'src/api/PDFEmbeddedPage';
-import PDFFont from 'src/api/PDFFont';
-import PDFImage from 'src/api/PDFImage';
+} from '../api/operators';
+import PDFDocument from '../api/PDFDocument';
+import PDFEmbeddedPage from '../api/PDFEmbeddedPage';
+import PDFFont from '../api/PDFFont';
+import PDFImage from '../api/PDFImage';
 import {
   PDFPageDrawCircleOptions,
   PDFPageDrawEllipseOptions,
@@ -30,9 +30,9 @@ import {
   PDFPageDrawSVGOptions,
   PDFPageDrawTextOptions,
   BlendMode,
-} from 'src/api/PDFPageOptions';
-import { degrees, Rotation, toDegrees } from 'src/api/rotations';
-import { StandardFonts } from 'src/api/StandardFonts';
+} from '../api/PDFPageOptions';
+import { degrees, Rotation, toDegrees } from '../api/rotations';
+import { StandardFonts } from '../api/StandardFonts';
 import {
   PDFContentStream,
   PDFHexString,
@@ -42,7 +42,7 @@ import {
   PDFRef,
   PDFDict,
   PDFArray,
-} from 'src/core';
+} from '../core';
 import {
   assertEachIs,
   assertIs,
@@ -54,7 +54,7 @@ import {
   lineSplit,
   assertRangeOrUndefined,
   assertIsOneOfOrUndefined,
-} from 'src/utils';
+} from '../utils';
 
 /**
  * Represents a single page of a [[PDFDocument]].

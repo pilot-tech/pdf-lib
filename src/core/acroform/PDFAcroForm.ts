@@ -1,10 +1,10 @@
-import PDFContext from 'src/core/PDFContext';
-import PDFDict from 'src/core/objects/PDFDict';
-import PDFArray from 'src/core/objects/PDFArray';
-import PDFName from 'src/core/objects/PDFName';
-import PDFRef from 'src/core/objects/PDFRef';
-import PDFAcroField from 'src/core/acroform/PDFAcroField';
-import PDFAcroNonTerminal from 'src/core/acroform/PDFAcroNonTerminal';
+import PDFContext from '../../core/PDFContext';
+import PDFDict from '../../core/objects/PDFDict';
+import PDFArray from '../../core/objects/PDFArray';
+import PDFName from '../../core/objects/PDFName';
+import PDFRef from '../../core/objects/PDFRef';
+import PDFAcroField from '../../core/acroform/PDFAcroField';
+import PDFAcroNonTerminal from '../../core/acroform/PDFAcroNonTerminal';
 import {
   createPDFAcroField,
   createPDFAcroFields,

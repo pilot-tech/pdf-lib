@@ -1,28 +1,28 @@
-import PDFDocument from 'src/api/PDFDocument';
-import PDFPage from 'src/api/PDFPage';
-import PDFField from 'src/api/form/PDFField';
-import PDFButton from 'src/api/form/PDFButton';
-import PDFCheckBox from 'src/api/form/PDFCheckBox';
-import PDFDropdown from 'src/api/form/PDFDropdown';
-import PDFOptionList from 'src/api/form/PDFOptionList';
-import PDFRadioGroup from 'src/api/form/PDFRadioGroup';
-import PDFSignature from 'src/api/form/PDFSignature';
-import PDFTextField from 'src/api/form/PDFTextField';
+import PDFDocument from '../../api/PDFDocument';
+import PDFPage from '../../api/PDFPage';
+import PDFField from '../../api/form/PDFField';
+import PDFButton from '../../api/form/PDFButton';
+import PDFCheckBox from '../../api/form/PDFCheckBox';
+import PDFDropdown from '../../api/form/PDFDropdown';
+import PDFOptionList from '../../api/form/PDFOptionList';
+import PDFRadioGroup from '../../api/form/PDFRadioGroup';
+import PDFSignature from '../../api/form/PDFSignature';
+import PDFTextField from '../../api/form/PDFTextField';
 import {
   NoSuchFieldError,
   UnexpectedFieldTypeError,
   FieldAlreadyExistsError,
   InvalidFieldNamePartError,
-} from 'src/api/errors';
-import PDFFont from 'src/api/PDFFont';
-import { StandardFonts } from 'src/api/StandardFonts';
-import { rotateInPlace } from 'src/api/operations';
+} from '../../api/errors';
+import PDFFont from '../../api/PDFFont';
+import { StandardFonts } from '../../api/StandardFonts';
+import { rotateInPlace } from '../../api/operations';
 import {
   drawObject,
   popGraphicsState,
   pushGraphicsState,
   translate,
-} from 'src/api/operators';
+} from '../../api/operators';
 import {
   PDFAcroForm,
   PDFAcroField,

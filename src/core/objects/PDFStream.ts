@@ -1,10 +1,10 @@
-import { MethodNotImplementedError } from 'src/core/errors';
-import PDFDict from 'src/core/objects/PDFDict';
-import PDFName from 'src/core/objects/PDFName';
-import PDFNumber from 'src/core/objects/PDFNumber';
-import PDFObject from 'src/core/objects/PDFObject';
-import PDFContext from 'src/core/PDFContext';
-import CharCodes from 'src/core/syntax/CharCodes';
+import { MethodNotImplementedError } from '../../core/errors';
+import PDFDict from '../../core/objects/PDFDict';
+import PDFName from '../../core/objects/PDFName';
+import PDFNumber from '../../core/objects/PDFNumber';
+import PDFObject from '../../core/objects/PDFObject';
+import PDFContext from '../../core/PDFContext';
+import CharCodes from '../../core/syntax/CharCodes';
 
 class PDFStream extends PDFObject {
   readonly dict: PDFDict;
